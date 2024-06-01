@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+    <h1>Recipe Submission Form</h1>
+    <form action="/submit" method="POST">
+        <form onsubmit="handlesubmit">
+            <label for="recipename">Recipe Name (required):</label>
+            <input 
+                type="text"
+                id="recipename"
+                name="recipename"
+                placeholder="Recipe Name"
+                autocomplete="on"
+                
+                required>
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+            <label for="ingredients">Ingredients (required):</label>
+            <input 
+                type="text"
+                id="ingredients"
+                name="Ingredients"
+                placeholder="Ingerdients Here"
+                required>
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+            <label for="instructions">Instructions (required):</label>
+            <input 
+                type="text"
+                id="instructions"
+                name="instructions"
+                placeholder="Instructions Here"
+                autocomplete="on"
+                required>
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+        </form>
+            <button type="submit">Submit</button>
+
+    
+</body>
+</html>
